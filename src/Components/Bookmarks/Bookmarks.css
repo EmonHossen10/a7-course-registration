@@ -1,3 +1,14 @@
-.horizontal-line{
-    border-top: 2px solid  rgba(28, 27, 27, 0.20) ;
+.horizontal-line {
+  border-top: 2px solid rgba(28, 27, 27, 0.2);
+}
+.credit {
+  color: #2f80ed;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.total {
+  color: rgba(28, 27, 27, 0.8);
+  font-size: 16px;
+  font-weight: 500;
 }

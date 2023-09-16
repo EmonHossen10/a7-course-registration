@@ -10,5 +10,5 @@ React state management is basically half of a React app. It includes all the dat
 
 ### in this assignment project i basically use below things
 
--useState
--useEffect
+- useState
+- useEffect

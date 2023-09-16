@@ -24,7 +24,7 @@ function App() {
       });
       const totalRemaining = 20 - count;
 
-      if(count >=20){
+      if(count >21){
         return toast.warning("Do not added course more than 20")
       }
       else{

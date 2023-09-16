@@ -1,11 +1,18 @@
  
 import './App.css'
+import Bookmarks from './Components/Bookmarks/Bookmarks'
+import Courses from './Components/Courses/Courses'
+import Header from './Components/Header/Header'
 
 function App() {
 
   return (
     <>
-     <h2 className='text-3xl'>This is new tab</h2>
+     <Header></Header>
+     <div className='flex w-10/12 mx-auto mt-12'>
+      <Courses></Courses>
+      <Bookmarks></Bookmarks>
+     </div>
     </>
   )
 }

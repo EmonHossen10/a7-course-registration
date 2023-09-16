@@ -1,6 +1,7 @@
 import { FiBookmark } from 'react-icons/fi';
 import './Course.css'
 const Course = ({course,handleAddBookmarks}) => {
+    // console.log(course)
     const {image,title,description,price,credit}=course
     return (
          <>

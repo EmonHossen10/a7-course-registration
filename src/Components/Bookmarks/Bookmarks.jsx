@@ -1,4 +1,6 @@
-import Bookmark from "../../Bookmark/Bookmark";
+import Bookmark from "../Bookmark/Bookmark";
+
+import "./Bookmarks.css";
 
 const Bookmarks = ({ bookmarks }) => {
   return (
@@ -11,6 +13,7 @@ const Bookmarks = ({ bookmarks }) => {
           {bookmarks.map((bookmark, i) => (
             <Bookmark key={i} bookmark={bookmark}></Bookmark>
           ))}
+          <hr className="my-3 horizontal-line" />
         </div>
       </div>
     </div>

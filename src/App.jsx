@@ -12,7 +12,7 @@ function App() {
   const [remaining, setRemaining] = useState(0);
 
   const handleAddBookmarks = (name) => {
-    console.log(bookmarks);
+    // console.log(bookmarks);
     const isExist = bookmarks.find((item) => item.id == name.id);
     // console.log(isExist);
     let count = name.credit;
@@ -24,7 +24,7 @@ function App() {
       });
       const totalRemaining = 20 - count;
 
-      if (count > 21) {
+      if (count >= 20) {
         return toast.warning("Do not added course more than 20");
       } else {
         setTotalCost(count);

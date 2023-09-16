@@ -23,12 +23,17 @@ function App() {
         count = count + item.credit;
       });
       const totalRemaining = 20 - count;
-      setTotalCost(count);
 
-      setRemaining(totalRemaining);
+      if(count >=20){
+        return toast.warning("Do not added course more than 20")
+      }
+      else{
 
-      const newBookmarks = [...bookmarks, name];
-      setBookmarks(newBookmarks);
+        setTotalCost(count);
+        setRemaining(totalRemaining);
+        const newBookmarks = [...bookmarks, name];
+        setBookmarks(newBookmarks);
+      }
     }
   };
   return (

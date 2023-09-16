@@ -1,10 +1,11 @@
 import { FiBookmark } from 'react-icons/fi';
-const Course = ({course}) => {
+import './Course.css'
+const Course = ({course,handleAddBookmarks}) => {
     const {image,title,description,price,credit}=course
     return (
          <>
             <div className="card    bg-base-100 shadow-xl">
-  <figure><img src={image} alt="Shoes" /></figure>
+  <figure><img className='p-2' src={image} alt="Shoes" /></figure>
   <div className="p-5">
     <h2 className="card-title font-bold">{title}</h2>
     <p className='my-3 '>{description}</p>
@@ -16,7 +17,7 @@ const Course = ({course}) => {
     </div>
      
     <div className="card-actions ">
-      <button className="btn btn-primary w-full">Select</button>
+      <button onClick={()=>handleAddBookmarks(course)} className="button-primary w-full">Select</button>
     </div>
   </div>
 </div>

@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Course from "../Course/Course";
 
-const Courses = () => {
+const Courses = ({handleAddBookmarks}) => {
   const [courses, setCourses] = useState([]);
   useEffect(() => {
     fetch("course.json")
@@ -13,7 +13,11 @@ const Courses = () => {
     <div className="w-2/3">
       <div className="grid grid-cols-3 gap-6">
         {courses.map((course, i) => (
-          <Course key={i} course={course}></Course>
+          <Course
+           key={i} 
+           course={course}
+           handleAddBookmarks={handleAddBookmarks}
+           ></Course>
         ))}
       </div>
     </div>

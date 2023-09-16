@@ -24,11 +24,9 @@ function App() {
       });
       const totalRemaining = 20 - count;
 
-      if(count >21){
-        return toast.warning("Do not added course more than 20")
-      }
-      else{
-
+      if (count > 21) {
+        return toast.warning("Do not added course more than 20");
+      } else {
         setTotalCost(count);
         setRemaining(totalRemaining);
         const newBookmarks = [...bookmarks, name];
@@ -41,10 +39,10 @@ function App() {
       <Header></Header>
       <div className="flex w-11/12	gap-5 mx-auto mt-12">
         <Courses handleAddBookmarks={handleAddBookmarks}></Courses>
-        <Bookmarks 
-        bookmarks={bookmarks}
-        totalCost={totalCost}
-        remaining={remaining}
+        <Bookmarks
+          bookmarks={bookmarks}
+          totalCost={totalCost}
+          remaining={remaining}
         ></Bookmarks>
         <ToastContainer />
       </div>

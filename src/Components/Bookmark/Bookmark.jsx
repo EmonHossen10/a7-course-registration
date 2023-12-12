@@ -1,10 +1,14 @@
-const Bookmark = ({ bookmark }) => {
+const Bookmark = ({ bookmark ,i }) => {
   const { title } = bookmark;
+  console.log(bookmark,i)
   return (
     <div>
-      <ol className="list-decimal ml-5">
+      {/* <ul className="list-decimal ml-5">
         <li>{title}</li>
-      </ol>
+      </ul> */}
+       
+        <span className="font-bold">{i+1}. </span> {title}
+       
     </div>
   );
 };

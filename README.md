@@ -1,4 +1,4 @@
-# 3 Live Link
+# Live Link
 https://6578b227274a8b139933f35b--sunny-blini-b8cc3a.netlify.app/
 
 # 3 Project features
